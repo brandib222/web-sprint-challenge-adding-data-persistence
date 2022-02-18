@@ -1,4 +1,4 @@
-const db = require('../../data/db-config')
+const db = require('../../data/dbConfig')
 
 const checkTaskId = async (req, res, next) => {
     try {

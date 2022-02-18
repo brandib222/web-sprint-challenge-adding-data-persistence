@@ -1,3 +1,4 @@
+
 exports.up = function (knex) {
     // return knex.schema
     //   .createTable('projects', tbl => {
@@ -37,24 +38,12 @@ exports.up = function (knex) {
     //         .inTable('projects')
     //         .onUpdate('CASCADE')
     //         .onDelete('CASCADE');
-    //  })
-    //   .createTable('resources', tbl => {
-    //     tbl.increments('resource_id');
-    //     tbl.text('resource_names')
-    //       .unique()
-    //       .notNullable();
-    //     tbl.integer('project_id')
-    //       .unsigned()
-    //       .notNullable()
-    //       .references('project_id')
-    //       .inTable('projects')
-    //       .onUpdate('CASCADE')
-    //       .onDelete('CASCADE');
-    //   });
+    //   })
   };
   
   exports.down = function (knex) {
     // return knex.schema
+    //   .dropTableIfExists('tasks')
     //   .dropTableIfExists('resources')
-    //   .dropTableIfExists('schemes');
+    //   .dropTableIfExists('projects');
   };

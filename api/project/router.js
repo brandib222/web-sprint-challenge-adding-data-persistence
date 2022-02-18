@@ -11,3 +11,5 @@ router.get('/', (res, req, next) => {
             res.json(projects)
         }).catch(next)
 })
+
+module.exports = router
