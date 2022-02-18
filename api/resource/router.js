@@ -20,4 +20,13 @@ router.use('*', (req, res, next) => {
     res.json({api: 'up'})
 })
 
+router.post('/api/resources', (req, res, next) => {
+    // - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
+})
+
+router.get('/api/resources', (req, res, next) => {
+//     - [ ] `[GET] /api/resources`
+//   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
+})
+
 module.exports = router
